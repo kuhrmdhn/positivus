@@ -14,8 +14,8 @@ This project was created to practice converting design to code using modern fron
 
 ## 🎨 Design Source
 Original UI Design from **Figma Community**:  
-👉 [Positivus - UI Design](https://www.figma.com/community/file/1230604708032389430)
-👉 [olgaaverchenko - Designer](https://www.figma.com/@olgaaverchenko)
+- [Positivus - UI Design](https://www.figma.com/community/file/1230604708032389430)
+- [olgaaverchenko - Designer](https://www.figma.com/@olgaaverchenko)
 
 ## 🛠 Getting Started
 Follow these steps to run the project locally:

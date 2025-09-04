@@ -46,6 +46,6 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## 🙏 Big Thanks
 
-- [olgaaverchenko](https://www.figma.com/@olgaaverchenko) of the original Positivus design
+- [olgaaverchenko](https://www.figma.com/@olgaaverchenko) as Positivus designer
 
 - Open-source tools and libraries: Next.js, Tailwind CSS, Framer Motion

@@ -44,7 +44,7 @@ Follow these steps to run the project locally:
 Visit [http://localhost:3000](http://localhost:3000)
 
 
-## 🙏 Big Thanks to:
+## 🙏 Big Thanks
 
 - [olgaaverchenko](https://www.figma.com/@olgaaverchenko) of the original Positivus design
 

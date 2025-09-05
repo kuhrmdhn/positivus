@@ -26,7 +26,7 @@ export default function TeamCard({ teamName, teamPhoto, teamPosition, descriptio
             </section>
             <Separator className='bg-secondary' />
             <section>
-                <p className='text-sm lg:text-base'>{description}</p>
+                <p className='text-sm lg:text-base line-clamp-4'>{description}</p>
             </section>
         </Card>
     )

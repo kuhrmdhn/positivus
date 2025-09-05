@@ -40,7 +40,7 @@ function Description() {
 function CTAButton() {
     return (
         <Slide transition={{ delay: 2, duration: 1 }}>
-            <Button className='bg-secondary hover:bg-secondary/90 h-12 w-[calc(100dvw-3rem)] lg:w-46'>
+            <Button className='bg-secondary hover:bg-secondary/90 h-12 w-[calc(100dvw-3rem)] md:w-46'>
                 Book a consultation
             </Button>
         </Slide>

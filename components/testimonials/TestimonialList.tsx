@@ -24,7 +24,7 @@ export default function TestimonialList() {
     }, [api])
 
     return (
-        <div className='bg-secondary rounded-4xl lg:h-[calc(100dvh-6rem)] overflow-hidden flex items-center py-7'>
+        <div className='bg-secondary rounded-4xl xl:h-[calc(100dvh-6rem)] overflow-hidden flex items-center py-7'>
             <Carousel
                 opts={{ loop: true, align: "center" }} plugins={[
                     AutoPlay({ delay: 10000 }),

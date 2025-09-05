@@ -4,7 +4,7 @@ import ShowUp from '../motion/ShowUp'
 
 export default function TeamLists() {
     return (
-        <div className='w-full h-fit grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
+        <div className='w-full h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5'>
             {
                 teams.map((team, index) => (
                     <ShowUp key={index} transition={{ duration: 0.7, delay: (index + 1) * 0.2 }}>

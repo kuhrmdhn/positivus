@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
@@ -7,17 +8,23 @@ import { Textarea } from '../ui/textarea'
 import { Button } from '../ui/button'
 import ShowUp from '../motion/ShowUp'
 import Divider from '../ui/divider'
+import { toast } from 'sonner'
 
 export default function ContactForm() {
+    function hanldeSubmit() {
+        toast("Email sended!", {
+            duration: 3000
+        })
+    }
     return (
         <>
-            <ShowUp className='h-fit lg:h-[calc(100dvh-6rem)] w-full py-14 lg:py-7 px-7 lg:px-14 rounded-4xl bg-tertiary relative overflow-hidden'>
-                <form className='w-full lg:w-2/5 h-full flex flex-col gap-5 justify-center'>
+            <ShowUp className='h-fit xl:h-[calc(100dvh-6rem)] w-full py-14 lg:py-7 px-7 lg:px-14 rounded-4xl bg-tertiary relative overflow-hidden'>
+                <form action={hanldeSubmit} className='w-full lg:w-2/5 h-full flex flex-col gap-5 justify-center'>
                     <RadioInputs />
                     <InputFields />
-                    <Button type="submit" className='h-12 bg-secondary hover:bg-secondary/90 active:bg-secondary/75'>Send Message</Button>
+                    <Button type="submit" className='h-12 bg-secondary !border-secondary hover:bg-secondary/90 active:bg-secondary/75'>Send Message</Button>
                 </form>
-                <Image src={"/images/contact-illustration.svg"} alt='Contact Illustration' height={1080} width={1080} className='h-5/6 hidden lg:block absolute top-1/2 -translate-y-1/2 -right-[41.5%]' />
+                <Image src={"/images/contact-illustration.svg"} alt='Contact Illustration' height={1080} width={1080} className='h-5/6 hidden lg:block absolute top-1/2 -translate-y-1/2 md:-right-[50%] xl:-right-[41.5%]' />
             </ShowUp>
             <Divider />
         </>

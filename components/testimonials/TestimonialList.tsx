@@ -30,12 +30,12 @@ export default function TestimonialList() {
                     AutoPlay({ delay: 10000 }),
                 ]}
                 setApi={setApi}
-                className="w-full flex flex-col items-center gap-7"
+                className="w-full flex flex-col justify-center items-center gap-7"
             >
-                <CarouselContent className='py-10'>
+                <CarouselContent className='sm:py-10'>
                     {
                         testimonials.map((testimonial, index) => (
-                            <CarouselItem key={index} className="basis-2/5">
+                            <CarouselItem key={index} className="basis-1/3 sm:basis-2/5">
                                 <TestimonialCard
                                     name={testimonial.name}
                                     detail={testimonial.detail}

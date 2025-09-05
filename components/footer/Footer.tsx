@@ -16,11 +16,11 @@ export default function Footer() {
                     <FooterContactInformation />
                     <FooterSubscription />
                 </div>
-                <div className='flex justify-center items-center md:hidden h-20'>
+                <div className='flex justify-center items-center md:hidden h-12 sm:h-20'>
                     <FooterHeading.ContactInformationLogo />
                 </div>
                 <Separator />
-                <div className='h-28 md:h-20 flex flex-col md:flex-row justify-center md:justify-start items-center gap-5'>
+                <div className='h-fit sm:h-28 md:h-20 flex flex-col md:flex-row justify-center md:justify-start items-center gap-5'>
                     <h6>© 2023 Positivus. All Rights Reserved.</h6>
                     <h6 className='inline-flex gap-1'>
                         Design by

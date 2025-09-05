@@ -6,7 +6,7 @@ import Fall from '../motion/Fall'
 function Navigations() {
     const navigations = ["About us", "Services", "Use Cases", "Pricing", "Blog"]
     return (
-        <ul className='flex flex-col lg:flex-row gap-12 items-center justify-end'>
+        <ul className='flex flex-col sm:flex-row gap-12 sm:gap-5 xl:gap-12 items-center justify-end'>
             <NavigationLists />
             <li>
                 <Fall delay={(navigations.length + 1) / 10}>

@@ -3,6 +3,7 @@ import { Roboto, PT_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -30,9 +31,12 @@ export default function RootLayout({
       <body
         className={`${roboto.className} ${ptSans.variable} antialiased`}
       >
-        <main className="px-4 lg:px-10">
+        <main className="px-4 lg:px-10 overflow-hidden sm:overflow-visible">
           <Navbar />
-          {children}
+          <div className="pt-18 sm:p-0">
+            {children}
+          </div>
+          <Toaster position="top-right" />
           <Footer />
         </main>
       </body>

@@ -14,7 +14,7 @@ export default function ServicesList() {
         }
     }
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10'>
             {
                 services.map((service, index) => (
                     <ShowUp className='pb-3' transition={{ duration: 0.8, delay: index % 2 === 0 ? 0 : 0.3 }} key={index}>

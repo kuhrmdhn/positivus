@@ -8,7 +8,7 @@ type Props = React.ComponentProps<typeof motion.div> & {
 
 export default function FadeIn({ children, ...props }: Props) {
     return (
-        <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} {...props}>
+        <motion.div transition={{ duration: 1, delay: 0.3 }} viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} {...props}>
             {children}
         </motion.div>
     )
